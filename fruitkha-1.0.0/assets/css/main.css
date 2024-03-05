@@ -1,4 +1,11 @@
-/*Template Name: Fruitkha - Responsive Bootstrap4 Shop TemplateTemplate URI: Description: Bootstrap template for fruits or any other kind of shopAuthor: Imran HossainAuthor URI: https://imransdesign.com/Version: 1.0*/
+/*
+Template Name: Fruitkha - Responsive Bootstrap4 Shop Template
+Template URI: 
+Description: Bootstrap template for fruits or any other kind of shop
+Author: Imran Hossain
+Author URI: https://imransdesign.com/
+Version: 1.0
+*/
 /* -----------------------------------------------------------------------------
 
 # Base - Genral & Typography
@@ -34,7 +41,7 @@ a {
 }
 
 a:hover {
-  color: #F28123;
+  color: #8DC643;
   text-decoration: none;
 }
 
@@ -165,7 +172,7 @@ p:last-child {
   top: 0;
   width: 100%;
   z-index: 1111;
-  background: #fff;
+  background: #F1FFFA;
   overflow-x: hidden;
 }
 
@@ -198,7 +205,7 @@ p:last-child {
   position: absolute;
   top: calc(50% - 3vmax);
   left: calc(50% - 3vmax);
-  border-left: 3px solid #F28123;
+  border-left: 3px solid #023436;
   border-radius: 100%;
   -webkit-animation: spinLeft 800ms linear infinite;
   animation: spinLeft 800ms linear infinite;
@@ -212,7 +219,7 @@ p:last-child {
   position: absolute;
   top: calc(50% - 3vmax);
   left: calc(50% - 3vmax);
-  border-left: 3px solid #F28123;
+  border-left: 3px solid #023436;
   border-radius: 100%;
   -webkit-animation: spinLeft 800ms linear infinite;
   animation: spinLeft 800ms linear infinite;
@@ -395,7 +402,7 @@ p:last-child {
 }
 
 .orange-text {
-  color: #F28123;
+  color: #8DC643;
 }
 
 .blue-bg {
@@ -405,7 +412,7 @@ p:last-child {
 a.boxed-btn {
   font-family: 'Poppins', sans-serif;
   display: inline-block;
-  background-color: #F28123;
+  background-color: #8DC643;
   color: #fff;
   padding: 10px 20px;
 }
@@ -450,7 +457,7 @@ a.boxed-btn, a.bordered-btn, a.cart-btn {
   bottom: 0px;
   width: 50px;
   height: 2px;
-  background-color: #F28123;
+  background-color: #0873BA;
   margin: 0 auto;
 }
 
@@ -472,7 +479,7 @@ a.boxed-btn, a.bordered-btn, a.cart-btn {
 }
 
 .breadcrumb-text p {
-  color: #F28123;
+  color: #0873BA;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 7px;
@@ -789,7 +796,7 @@ a.mobile-show {
 
 .search-bar-tablecell button[type=submit] {
   border: none;
-  background-color: #F28123;
+  background-color: #8DC643;
   padding: 15px 30px;
   cursor: pointer;
   display: inline-block;
@@ -1392,7 +1399,7 @@ html, body {
 }
 
 .hero-text p.subtitle {
-  color: #F28123;
+  color: #8DC643;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 7px;
