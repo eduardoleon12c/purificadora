@@ -31,6 +31,16 @@
 	<!-- responsive -->
 	<link rel="stylesheet" href="assets/css/responsive.css">
 
+	<!-- Leafseat MAPS -->
+    <!-- Load Leaflet from CDN-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""></script>
+
 </head>
 <body>
 	
@@ -105,8 +115,8 @@
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2 text-center">
 					<div class="breadcrumb-text">
-						<p>Get 24/7 Support</p>
-						<h1>Contact us</h1>
+						<p>Disponibles para ti</p>
+						<h1>Contactanos</h1>
 					</div>
 				</div>
 			</div>
@@ -144,7 +154,7 @@
 					<div class="contact-form-wrap">
 						<div class="contact-form-box">
 							<h4><i class="fas fa-map"></i>Dirección</h4>
-							<p>34/8, East Hukupara <br> Gifirtok, Sadan. <br> Country Name</p>
+							<p>Habana #, Tepeyac Insurgentes, Gustavo A. Madero, 07020 Ciudad de México, CDMX</p>
 						</div>
 						<div class="contact-form-box">
 							<h4><i class="far fa-clock"></i>Horario</h4>
@@ -174,8 +184,21 @@
 	<!-- end find our location -->
 
 	<!-- google map section -->
-	<div class="embed-responsive embed-responsive-21by9">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d940.3336372010348!2d-99.12254706813124!3d19.48423731249631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1709353329505!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	<div id="map" style="height: 45rem;">
+			<script>
+				let lat = 19.484237817889223
+				let lon = -99.12243962287903
+				var map = L.map('map').setView([lat, lon], 18);
+				L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+					maxZoom: 19,
+					attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+				}).addTo(map);
+				var marker = L.marker([lat, lon]).addTo(map);
+				var popup = L.popup()
+					.setLatLng([lat, lon])
+					.setContent("AQUA JAKNET - Habana #, Tepeyac Insurgentes, Gustavo A. Madero, 07020 Ciudad de México, CDMX")
+					.openOn(map);
+			</script>
 	</div>
 	<!-- end google map section -->
 
